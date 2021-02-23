@@ -42,7 +42,7 @@ public class DrivetrainSubsystem extends SubsystemBase {
      * is private since this class is a Singleton. Code should use
      * the {@link #getInstance()} method to get the singleton instance.
      */
-    private DrivetrainSubsystem() {
+    public DrivetrainSubsystem() {
         // TODO: Set the default command, if any, for this subsystem by calling setDefaultCommand(command)
         //       in the constructor or in the robot coordination class, such as RobotContainer.
         //       Also, you can call addChild(name, sendableChild) to associate sendables with the subsystem
