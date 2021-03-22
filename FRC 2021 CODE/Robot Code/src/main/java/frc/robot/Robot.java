@@ -44,8 +44,7 @@ public class Robot extends TimedRobot {
 
     boolean isPressed = j.getRawButton(1);
     double axisValue = j.getRawAxis(1);
-    //controls the angle of the d pad in degrees or -1 if POV(d pad) is not presses
-    int dpadDirection = j.getPOV(0);
+    
 
   }
 
