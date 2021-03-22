@@ -36,10 +36,17 @@ public class Robot extends TimedRobot {
     // Instantiate our RobotContainer.  This will perform all our button bindings, and put our
     // autonomous chooser on the dashboard.
     m_robotContainer = new RobotContainer();
+
     left = new Spark(0);
     right = new Spark(1);
 
     j = new Joystick(0);
+
+    boolean isPressed = j.getRawButton(1);
+    double axisValue = j.getRawAxis(1);
+    //controls the angle of the d pad in degrees or -1 if POV(d pad) is not presses
+    int dpadDirection = j.getPOV(0);
+
   }
 
   /**
@@ -86,8 +93,7 @@ public class Robot extends TimedRobot {
     // teleop starts running. If you want the autonomous to
     // continue until interrupted by another command, remove
     // this line or comment it out.
-    left.set(j.getRawAxis(1));
-    right.set(j.getRawAxis(5));
+
 
     if (m_autonomousCommand != null) {
       m_autonomousCommand.cancel();
@@ -97,8 +103,10 @@ public class Robot extends TimedRobot {
   /** This function is called periodically during operator control. */
   @Override
   public void teleopPeriodic() {
-    left.set(0.2);
-    right.set(0.2);
+    //left joystick y axis controls left motor
+    left.set(j.getRawAxis(1));
+    //right joystick y axis controls right motor
+    right.set(j.getRawAxis(5));
   }
 
   @Override
