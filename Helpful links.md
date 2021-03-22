@@ -19,5 +19,6 @@ https://github.com/wpilibsuite/GradleRIO
 Rev Hardware Client Download:
 https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions 
 
-
+Spark Max Client Software:
+https://docs.revrobotics.com/sparkmax/spark-max-client/getting-started-with-the-spark-max-client
 
