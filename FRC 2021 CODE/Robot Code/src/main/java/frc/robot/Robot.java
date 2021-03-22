@@ -20,7 +20,9 @@ public class Robot extends TimedRobot {
   private Command m_autonomousCommand;
 
   private RobotContainer m_robotContainer;
+  //left motor
   Spark left;
+  //right motor
   Spark right;
 
   Joystick j;
@@ -37,6 +39,7 @@ public class Robot extends TimedRobot {
     // autonomous chooser on the dashboard.
     m_robotContainer = new RobotContainer();
 
+
     left = new Spark(0);
     right = new Spark(1);
 
@@ -44,7 +47,7 @@ public class Robot extends TimedRobot {
 
     boolean isPressed = j.getRawButton(1);
     double axisValue = j.getRawAxis(1);
-    
+
 
   }
 
