@@ -16,5 +16,9 @@ https://www.chiefdelphi.com/t/guide-using-intellij-for-robot-projects/363754
 General info on GradleRio (gradle plugin for robot deployement):
 https://github.com/wpilibsuite/GradleRIO 
 
+Rev Hardware Client Download:
+https://docs.revrobotics.com/rev-hardware-client/getting-started/installation-instructions 
 
+Spark Max Client Software:
+https://docs.revrobotics.com/sparkmax/spark-max-client/getting-started-with-the-spark-max-client
 
